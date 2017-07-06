@@ -3,6 +3,7 @@
 #News-Widget is a News Demo Widget
 This app i am using third party libraris 
 1. Kingfisher for image caching
+
 https://newsapi.org API use for news dispaly
 
 News Widget is a simple the "times of india" news for Notification Center, written in Swift 3 .
