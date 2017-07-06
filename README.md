@@ -1,7 +1,9 @@
 # News-Widgets_swift
  
-#News-Widget is a News Demo Widget
+#News-Widget is a News Demo Widget.
+
 This app i am using third party libraris 
+
 1. Kingfisher for image caching
 
 https://newsapi.org API use for news dispaly
