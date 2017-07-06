@@ -1,0 +1,6 @@
+framework module Pods_Letest_News {
+  umbrella header "Pods-Letest News-umbrella.h"
+
+  export *
+  module * { export * }
+}
