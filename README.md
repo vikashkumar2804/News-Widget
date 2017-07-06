@@ -2,7 +2,7 @@
  
 #News-Widget is a News Demo Widget.
 
-This app i am using third party libraris 
+This app i am using third party libraries 
 
 1. Kingfisher for image caching
 
