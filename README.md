@@ -8,7 +8,7 @@ This app i am using third party libraries
 
 https://newsapi.org API use for news dispaly
 
-News Widget is a simple the "times of india" news for Notification Center, written in Swift 3 .
+News Widget is a simple the "The Times Of India" news for Notification Center, written in Swift 3 .
 
 # How to use
 ---------------------------------------------------------------------------------------
