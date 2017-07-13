@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>pushNotification.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>CA8BDE211F0D16860070BE52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CAE662421F0F923E006BA86C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

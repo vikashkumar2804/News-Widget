@@ -19,6 +19,8 @@
 		CA8BDE291F0D16860070BE52 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8BDE271F0D16860070BE52 /* MainInterface.storyboard */; };
 		CA8BDE2D1F0D16860070BE52 /* Letest News.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA8BDE221F0D16860070BE52 /* Letest News.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CA8BDE321F0D18780070BE52 /* newsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BDE311F0D18780070BE52 /* newsCell.swift */; };
+		CAE662461F0F923E006BA86C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE662451F0F923E006BA86C /* NotificationService.swift */; };
+		CAE6624A1F0F923E006BA86C /* pushNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CAE662431F0F923E006BA86C /* pushNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CA8BDE211F0D16860070BE52;
 			remoteInfo = "Letest News";
+		};
+		CAE662481F0F923E006BA86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8BDD981F0D0D530070BE52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE662421F0F923E006BA86C;
+			remoteInfo = pushNotification;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +48,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				CA8BDE2D1F0D16860070BE52 /* Letest News.appex in Embed App Extensions */,
+				CAE6624A1F0F923E006BA86C /* pushNotification.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +72,9 @@
 		CA8BDE281F0D16860070BE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		CA8BDE2A1F0D16860070BE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA8BDE311F0D18780070BE52 /* newsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsCell.swift; sourceTree = "<group>"; };
+		CAE662431F0F923E006BA86C /* pushNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pushNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE662451F0F923E006BA86C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		CAE662471F0F923E006BA86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D617DDF8C0D9EEF42211DF71 /* Pods-Letest News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Letest News.release.xcconfig"; path = "Pods/Target Support Files/Pods-Letest News/Pods-Letest News.release.xcconfig"; sourceTree = "<group>"; };
 		F90A0AEEFEB0F3DEE70021F8 /* Pods_Letest_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Letest_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA82C0A87AF9B5C9EB6E1AF4 /* Pods_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAE662401F0F923E006BA86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +124,7 @@
 			children = (
 				CA8BDDA21F0D0D540070BE52 /* News */,
 				CA8BDE241F0D16860070BE52 /* Letest News */,
+				CAE662441F0F923E006BA86C /* pushNotification */,
 				CA8BDE0C1F0D16110070BE52 /* Frameworks */,
 				CA8BDDA11F0D0D540070BE52 /* Products */,
 				B9DCFE81261B3DF3D426465D /* Pods */,
@@ -115,6 +136,7 @@
 			children = (
 				CA8BDDA01F0D0D540070BE52 /* News.app */,
 				CA8BDE221F0D16860070BE52 /* Letest News.appex */,
+				CAE662431F0F923E006BA86C /* pushNotification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +175,15 @@
 			path = "Letest News";
 			sourceTree = "<group>";
 		};
+		CAE662441F0F923E006BA86C /* pushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				CAE662451F0F923E006BA86C /* NotificationService.swift */,
+				CAE662471F0F923E006BA86C /* Info.plist */,
+			);
+			path = pushNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +203,7 @@
 			);
 			dependencies = (
 				CA8BDE2C1F0D16860070BE52 /* PBXTargetDependency */,
+				CAE662491F0F923E006BA86C /* PBXTargetDependency */,
 			);
 			name = News;
 			productName = News;
@@ -198,6 +230,23 @@
 			productReference = CA8BDE221F0D16860070BE52 /* Letest News.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		CAE662421F0F923E006BA86C /* pushNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE6624D1F0F923E006BA86C /* Build configuration list for PBXNativeTarget "pushNotification" */;
+			buildPhases = (
+				CAE6623F1F0F923E006BA86C /* Sources */,
+				CAE662401F0F923E006BA86C /* Frameworks */,
+				CAE662411F0F923E006BA86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pushNotification;
+			productName = pushNotification;
+			productReference = CAE662431F0F923E006BA86C /* pushNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +263,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					CA8BDE211F0D16860070BE52 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = UECYSF7WKH;
+						ProvisioningStyle = Automatic;
+					};
+					CAE662421F0F923E006BA86C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = UECYSF7WKH;
 						ProvisioningStyle = Automatic;
@@ -235,6 +289,7 @@
 			targets = (
 				CA8BDD9F1F0D0D540070BE52 /* News */,
 				CA8BDE211F0D16860070BE52 /* Letest News */,
+				CAE662421F0F923E006BA86C /* pushNotification */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8BDE291F0D16860070BE52 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE662411F0F923E006BA86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +434,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAE6623F1F0F923E006BA86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE662461F0F923E006BA86C /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -379,6 +449,11 @@
 			isa = PBXTargetDependency;
 			target = CA8BDE211F0D16860070BE52 /* Letest News */;
 			targetProxy = CA8BDE2B1F0D16860070BE52 /* PBXContainerItemProxy */;
+		};
+		CAE662491F0F923E006BA86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE662421F0F923E006BA86C /* pushNotification */;
+			targetProxy = CAE662481F0F923E006BA86C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,6 +638,32 @@
 			};
 			name = Release;
 		};
+		CAE6624B1F0F923E006BA86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UECYSF7WKH;
+				INFOPLIST_FILE = pushNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vikash.News.pushNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CAE6624C1F0F923E006BA86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UECYSF7WKH;
+				INFOPLIST_FILE = pushNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vikash.News.pushNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,6 +690,15 @@
 			buildConfigurations = (
 				CA8BDE2F1F0D16870070BE52 /* Debug */,
 				CA8BDE301F0D16870070BE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE6624D1F0F923E006BA86C /* Build configuration list for PBXNativeTarget "pushNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6624B1F0F923E006BA86C /* Debug */,
+				CAE6624C1F0F923E006BA86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
